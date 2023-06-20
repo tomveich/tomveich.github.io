@@ -1,21 +1,16 @@
-@font-face {
-    font-family: "ubuntu";
-    src: url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-}
 
 :root {
-    --positive: #000;
-    --negative: #fff;
+    --positive: #fff;
+    --negative: #212121;
 }
 
-/*
-@media (prefers-color-scheme: light) {
+@media screen and (prefers-color-scheme: dark) {
     :root {
-        --positive: #fff;
-        --negative: #000;
+        --positive: #000;
+        --negative: #dfdfdf;
     }
 }
-*/
+
 
 html {
     display: flex;
@@ -24,10 +19,11 @@ html {
     align-items: center;
     justify-content: center;
     font-size: 62.5%;
+
 }
 
 body {
-    font-family: "ubuntu";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background-color: var(--positive);
     color: var(--negative);
 
